@@ -19,6 +19,11 @@
       <button>Get Space Images</button>
     </div>
 
+    <section class="space-fact" aria-labelledby="spaceFactHeading">
+      <h2 id="spaceFactHeading">Did You Know?</h2>
+      <p id="spaceFact"></p>
+    </section>
+
     <div id="gallery" class="gallery">
       <div class="placeholder">
         <div class="placeholder-icon">🔭</div>
@@ -26,6 +31,16 @@
       </div>
     </div>
   </div>
+
+  <dialog id="apodModal" class="apod-modal" aria-labelledby="modalTitle">
+    <div class="modal-header">
+      <h2 id="modalTitle"></h2>
+      <button type="button" id="closeModal" class="modal-close">Close</button>
+    </div>
+    <img id="modalImage" class="modal-image" alt="" />
+    <p id="modalDate" class="modal-date"></p>
+    <p id="modalExplanation" class="modal-explanation"></p>
+  </dialog>
 
   <script src="js/dateRange.js"></script>
   <script src="js/script.js"></script>
